@@ -1,0 +1,23 @@
+
+<div>
+  <nav class='navbar navbar-default'>
+      <div class='container-fluid'>
+          <a class='navbar-brand'>{{pageTitle}}</a>
+          <ul class='nav navbar-nav'>
+              <li><a [routerLink]="['/welcome']">Home</a></li>
+              <li><a [routerLink]="['/library']">Library</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Decks<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a>My Decks</a></li>
+                  <li><a>Deck Builder</a></li>
+                </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <div class="container">
+      <router-outlet></router-outlet>
+  </div>
+</div>
+
+
