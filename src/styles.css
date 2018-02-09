@@ -2,3 +2,33 @@
 .mtgBackground {
     background-color: black;
 }
+
+.black {
+    width: 25px;
+    height: 25px;
+    background: url(assets/manaSymbols.jpg) -162px -23px;
+}
+
+.blue {
+    width: 24px;
+    height: 24px;
+    background: url(assets/manaSymbols.jpg) -91px 0;
+}
+
+.red {
+    width: 43px;
+    height: 44px;
+    background: url(assets/manaSymbols.jpg) -91px 0;
+}
+
+.white {
+    width: 43px;
+    height: 44px;
+    background: url(assets/manaSymbols.jpg) -91px 0;
+}
+
+.green {
+    width: 43px;
+    height: 44px;
+    background: url(assets/manaSymbols.jpg) -91px 0;
+}

@@ -6,12 +6,15 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { LibraryComponent } from './library/library.component';
+import { CardService } from './library/library.service';
+import { ManaComponent } from './shared/mana/mana.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    LibraryComponent
+    LibraryComponent,
+    ManaComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,7 @@ import { LibraryComponent } from './library/library.component';
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])
   ],
-  providers: [],
+  providers: [CardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

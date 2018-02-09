@@ -12,8 +12,14 @@
                   </tr>
               </thead>
               <tbody>
-                  <tr>
-                  </tr>
+                    <tr *ngFor='let card of mtgCards'>
+                        <td>{{card.name}}</td>
+                        <td>
+                            <img *ngFor="let image of card.manaImages" [src]="image" />
+                        </td>
+                        <td>{{card.setName}}</td>
+                        <td>$1.00</td>
+                    </tr>
               </tbody>
           </table>
       </div>
